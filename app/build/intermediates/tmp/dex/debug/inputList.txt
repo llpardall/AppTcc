@@ -1,0 +1,8 @@
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\classes\debug
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-fdecea41a07a2ab670b861c967f2e95484c921a1.jar
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\butterknife-6.0.0-de117d7a4992ab656ad36f16e66d378f7c76ff77.jar
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48-2cd5b4728a8a81fc87e5224c383ff91ee47597a7.jar
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-9a721b1e8c9d2fe36632cf44f1b36ad5082c0310.jar
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48-7cdc9d69f6db0867db2a23eafeba81f1f7ae4471.jar
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\classes-4169a672bdf3ab383683661a7e4e518c741afd69.jar
+C:\Users\Administrador\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\classes-f885ba658037de28aa73f85ae67e4175dd9ef8e1.jar
