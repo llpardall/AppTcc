@@ -1,9 +1,17 @@
 package model;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
+@DatabaseTable(tableName = "tarefas")
 public class Tarefa {
+    @DatabaseField(generatedId = true)
     private Integer _id;
+    @DatabaseField
     private String tarefa;
+    @DatabaseField
     private String dt_criacao;
+    @DatabaseField
     private String dt_completado;
 
     public Tarefa(){}

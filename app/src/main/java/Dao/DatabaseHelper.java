@@ -4,34 +4,48 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
+import com.j256.ormlite.support.ConnectionSource;
+import com.j256.ormlite.table.TableUtils;
+
+import java.sql.SQLException;
+
+import model.Questao;
+import model.Tarefa;
+import model.Usuario;
+
+public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String BANCO_DADOS = "conc";
     private static final int VERSAO = 1;
 
     public DatabaseHelper(Context context){
-
         super(context, BANCO_DADOS, null, VERSAO);
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        //Tabela de usuários
-        db.execSQL("create table usuarios(_id integer primary key autoincrement, "
-                    +"nome text not null, login text not null, senha text not null)");
-
-        //Tabela de tarefas
-        db.execSQL("create table tarefas(_id integer primary key autoincrement, "
-                   +"tarefa text not null, dt_criacao datetime default current_timestamp, dt_completado datetime)");
-
-        //Cadastrar um usuário
-        db.execSQL("insert into usuarios(nome, login, senha) values('Admin', 'admin', '123')");
+    public void onCreate(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource) {
+        try {
+            TableUtils.createTable(connectionSource, Usuario.class);
+            TableUtils.createTable(connectionSource, Tarefa.class);
+            TableUtils.createTable(connectionSource, Questao.class);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource, int i, int i2) {
+        try {
+            TableUtils.dropTable(connectionSource, Usuario.class,true);
+            TableUtils.dropTable(connectionSource, Tarefa.class,true);
+            TableUtils.dropTable(connectionSource, Questao.class,true);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        onCreate(sqLiteDatabase,connectionSource);
     }
+
 
     public static class Usuarios{
         public static final String TABELA = "usuarios";
