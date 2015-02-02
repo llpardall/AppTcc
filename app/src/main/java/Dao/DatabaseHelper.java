@@ -29,6 +29,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             TableUtils.createTable(connectionSource, Usuario.class);
             TableUtils.createTable(connectionSource, Tarefa.class);
             TableUtils.createTable(connectionSource, Questao.class);
+            sqLiteDatabase.execSQL("insert into usuarios(nome, login, senha) values('Admin', 'admin', '123')");
         } catch (SQLException e) {
             e.printStackTrace();
         }
