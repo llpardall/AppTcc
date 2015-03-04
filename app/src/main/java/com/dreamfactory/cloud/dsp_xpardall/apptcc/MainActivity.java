@@ -5,19 +5,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.*;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.EditText;
 
-import butterknife.*;
-
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class MainActivity extends ActionBarActivity {
+
+    @InjectView(R.id.btnCad) protected Button btnCad;
+    @InjectView(R.id.btnList) protected Button btnList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ButterKnife.inject(MainActivity.this);
+        ButterKnife.inject(this);
     }
 
 
@@ -39,5 +44,15 @@ public class MainActivity extends ActionBarActivity {
             startActivity(new Intent(this, ListUsuariosActivity.class));
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @OnClick(R.id.btnCad)
+    public void cadastrar(){
+        startActivity(new Intent(this, CadUsuarioActivity.class));
+    }
+
+    @OnClick(R.id.btnList)
+    public void listar(){
+        startActivity(new Intent(this, ListUsuariosActivity.class));
     }
 }
