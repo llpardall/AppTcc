@@ -30,6 +30,13 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             TableUtils.createTable(connectionSource, Tarefa.class);
             TableUtils.createTable(connectionSource, Questao.class);
             sqLiteDatabase.execSQL("insert into usuarios(nome, login, senha) values('Admin', 'admin', '123')");
+            sqLiteDatabase.execSQL("insert into question(questao, respostaa, respostb,respostac,respostad,correta,assunto)" +
+                    " values('De acordo com a Norma Culta da Língua Portuguesa, assinale a única alternativa que está de acordo com a Gramática:" +
+                    "', 'A senhora que a pouco foi atropelada é aquela que eu te falei.'" +
+                    ", 'A senhora que a pouco foi atropelada é aquela de que eu te falei.'," +
+                    "'A senhora que há pouco foi atropelada é aquela que eu lhe falei.'," +
+                    "'A senhora que há pouco foi atropelada é aquela de que eu lhe falei.'," +
+                    "'d','Português')");
         } catch (SQLException e) {
             e.printStackTrace();
         }
