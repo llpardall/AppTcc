@@ -1,12 +1,11 @@
 package com.dreamfactory.cloud.dsp_xpardall.apptcc;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
-import android.view.*;
+import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.EditText;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-
 import com.dreamfactory.cloud.dsp_xpardall.apptcc.R;
 
 import java.util.List;
