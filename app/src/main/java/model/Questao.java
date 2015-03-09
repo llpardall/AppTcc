@@ -22,6 +22,8 @@ public class Questao {
     @DatabaseField
     private String respostaD;
     @DatabaseField
+    private String respostaE;
+    @DatabaseField
     private String correta;
     @DatabaseField
     private String assunto;
@@ -82,5 +84,13 @@ public class Questao {
 
     public void setAssunto(String assunto) {
         this.assunto = assunto;
+    }
+
+    public String getRespostaE() {
+        return respostaE;
+    }
+
+    public void setRespostaE(String respostaE) {
+        this.respostaE = respostaE;
     }
 }
