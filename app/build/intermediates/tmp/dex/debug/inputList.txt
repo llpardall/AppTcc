@@ -3,6 +3,7 @@ C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\supp
 C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\butterknife-6.0.0-c3256c7f971a72ad7a2c7e036c7455a8022eedab.jar
 C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48-0f96550891180463bd06d61954e75b674505cc86.jar
 C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6ca8b434e5b43b1a05b6f5e99e9b457b4c033d57.jar
+C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\classes-712ddae888c3418878bfbbb203c5e1b18a35fd5b.jar
 C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48-e6cb439e16506524c68e7f9edd33ac42e3425390.jar
 C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\classes-d861ad877350675902287149115717bdfbf7dd05.jar
 C:\Users\Fatec\Downloads\TCC\AppTcc\app\build\intermediates\pre-dexed\debug\classes-c7c06193cbe3af6e7a0e2f227499fc8a217b011d.jar

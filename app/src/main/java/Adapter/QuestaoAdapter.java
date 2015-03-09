@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.dreamfactory.cloud.dsp_xpardall.apptcc.R;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import Holder.QuestaoViewHolder;
 import model.Questao;
@@ -19,9 +19,9 @@ import model.Questao;
 public class QuestaoAdapter extends RecyclerView.Adapter<QuestaoViewHolder> {
 
     private Context context;
-    private ArrayList<Questao> itens;
+    private List<Questao> itens;
 
-    public QuestaoAdapter(Context context,ArrayList<Questao> itens) {
+    public QuestaoAdapter(Context context,List<Questao> itens) {
         this.context = context;
         this.itens = itens;
     }

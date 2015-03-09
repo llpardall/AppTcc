@@ -3,6 +3,8 @@ package model;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import Dao.DatabaseHelper;
+
 /**
  * Created by Usuario on 30/01/2015.
  */
@@ -29,6 +31,18 @@ public class Questao {
     private String assunto;
 
     public Questao(){}
+
+    public Questao(int _id, String questao, String respostaA, String respostaB, String respostaC, String respostaD, String respostaE, String correta, String assunto) {
+        this._id = _id;
+        this.questao = questao;
+        this.respostaA = respostaA;
+        this.respostaB = respostaB;
+        this.respostaC = respostaC;
+        this.respostaD = respostaD;
+        this.respostaE = respostaE;
+        this.correta = correta;
+        this.assunto = assunto;
+    }
 
     public String getQuestao() {
         return questao;

@@ -28,6 +28,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name=".ListQuestoesActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name=".DwActivity"
             android:label="@string/title_activity_dw" >
         </activity>

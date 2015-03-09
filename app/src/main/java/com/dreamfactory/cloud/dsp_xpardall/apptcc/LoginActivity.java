@@ -77,7 +77,7 @@ public class LoginActivity extends ActionBarActivity {
     }
 
     private void ChamarMainAcitivity(){
-        startActivity(new Intent(this, DwActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 

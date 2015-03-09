@@ -1318,19 +1318,19 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f080001;
         public static final int action_bar_subtitle=0x7f08001f;
         public static final int action_bar_title=0x7f08001e;
-        public static final int action_cadastro_usuarios=0x7f080053;
+        public static final int action_cadastro_usuarios=0x7f08005a;
         public static final int action_context_bar=0x7f080032;
-        public static final int action_example=0x7f080051;
-        public static final int action_lista_usuarios=0x7f080054;
+        public static final int action_example=0x7f080058;
+        public static final int action_lista_usuarios=0x7f08005b;
         public static final int action_menu_divider=0x7f080002;
-        public static final int action_menu_excluir=0x7f08004f;
+        public static final int action_menu_excluir=0x7f080056;
         public static final int action_menu_presenter=0x7f080003;
-        public static final int action_menu_sair=0x7f080050;
-        public static final int action_menu_salvar=0x7f08004e;
+        public static final int action_menu_sair=0x7f080057;
+        public static final int action_menu_salvar=0x7f080055;
         public static final int action_mode_bar=0x7f08002e;
         public static final int action_mode_bar_stub=0x7f08002d;
         public static final int action_mode_close_button=0x7f080020;
-        public static final int action_settings=0x7f080052;
+        public static final int action_settings=0x7f080059;
         public static final int activity_chooser_view_content=0x7f080021;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
@@ -1369,6 +1369,12 @@ containing a value of this type.
         public static final int progress_circular=0x7f080005;
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08002b;
+        public static final int rdbOpA=0x7f08004e;
+        public static final int rdbOpB=0x7f08004f;
+        public static final int rdbOpC=0x7f080050;
+        public static final int rdbOpD=0x7f080051;
+        public static final int rdbOpE=0x7f080052;
+        public static final int recycler_view=0x7f080053;
         public static final int search_badge=0x7f080035;
         public static final int search_bar=0x7f080034;
         public static final int search_button=0x7f080036;
@@ -1388,12 +1394,13 @@ containing a value of this type.
         public static final int submit_area=0x7f08003c;
         public static final int tabMode=0x7f08000b;
         public static final int title=0x7f080027;
+        public static final int txvQuestao=0x7f08004d;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
         public static final int usuario_edtLogin=0x7f080040;
         public static final int usuario_edtNome=0x7f08003f;
         public static final int usuario_edtSenha=0x7f080041;
-        public static final int usuario_lista_nome=0x7f08004d;
+        public static final int usuario_lista_nome=0x7f080054;
         public static final int withText=0x7f08001a;
         public static final int wrap_content=0x7f08001d;
     }
@@ -1431,8 +1438,10 @@ containing a value of this type.
         public static final int activity_main=0x7f03001b;
         public static final int fragment_dw=0x7f03001c;
         public static final int fragment_navigation_drawer=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
-        public static final int usuarios=0x7f03001f;
+        public static final int item_questao=0x7f03001e;
+        public static final int list_questao=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int usuarios=0x7f030021;
     }
     public static final class menu {
         public static final int cadastros=0x7f0c0000;

@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
         }
 
         if (id == R.id.action_lista_usuarios) {
-            startActivity(new Intent(this, ListUsuariosActivity.class));
+            startActivity(new Intent(this, ListQuestoesActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
@@ -52,6 +52,6 @@ public class MainActivity extends ActionBarActivity {
 
     @OnClick(R.id.btnList)
     public void listar(){
-        startActivity(new Intent(this, ListUsuariosActivity.class));
+        startActivity(new Intent(this, ListQuestoesActivity.class));
     }
 }

@@ -16,7 +16,7 @@ import model.Usuario;
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String BANCO_DADOS = "conc";
-    private static final int VERSAO = 1;
+    private static final int VERSAO = 2;
 
     public DatabaseHelper(Context context){
         super(context, BANCO_DADOS, null, VERSAO);
@@ -29,7 +29,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             TableUtils.createTable(connectionSource, Tarefa.class);
             TableUtils.createTable(connectionSource, Questao.class);
             sqLiteDatabase.execSQL("insert into usuarios(nome, login, senha) values('Admin', 'admin', '123')");
-            sqLiteDatabase.execSQL("insert into question(questao, respostaa, respostb,respostac,respostad,correta,assunto)" +
+            sqLiteDatabase.execSQL("insert into question(questao, respostaa, respostab,respostac,respostad,correta,assunto)" +
                     " values('De acordo com a Norma Culta da Língua Portuguesa, assinale a única alternativa que está de acordo com a Gramática:" +
                     "', 'A senhora que a pouco foi atropelada é aquela que eu te falei.'" +
                     ", 'A senhora que a pouco foi atropelada é aquela de que eu te falei.'," +
@@ -75,6 +75,23 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
         public static final String[] COLUNAS = new String[]{
                 _ID, TAREFA, DT_CRIACAO, DT_COMPLETADO
+        };
+    }
+
+    public static class Questoes{
+        public static final String TABELA = "question";
+        public static final String _ID = "_id";
+        public static final String QUESTAO = "questao";
+        public static final String RESPOSTAA = "respostaa";
+        public static final String RESPOSTAB = "respostab";
+        public static final String RESPOSTAC = "respostac";
+        public static final String RESPOSTAD = "respostad";
+        public static final String RESPOSTAE = "respostae";
+        public static final String CORRETA = "correta";
+        public static final String ASSUNTO = "assunto";
+
+        public static final String[] COLUNAS = new String[]{
+                _ID,QUESTAO,RESPOSTAA,RESPOSTAB,RESPOSTAC,RESPOSTAD,RESPOSTAE,CORRETA,ASSUNTO
         };
     }
 }
