@@ -45,11 +45,11 @@ public class QuestaoDAO {
         return model;
     }
 
-    public List<Questao> listarQuestoes(){
+    public ArrayList<Questao> listarQuestoes(){
         Cursor cursor = getDatabase().query(DatabaseHelper.Usuarios.TABELA,
                 DatabaseHelper.Usuarios.COLUNAS, null, null, null, null, null);
 
-        List<Questao> questoes = new ArrayList<>();
+        ArrayList<Questao> questoes = new ArrayList<>();
         while(cursor.moveToNext()){
             Questao model = criarQuestao(cursor);
             questoes.add(model);

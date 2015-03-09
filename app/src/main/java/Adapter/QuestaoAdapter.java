@@ -46,6 +46,6 @@ public class QuestaoAdapter extends RecyclerView.Adapter<QuestaoViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return itens.size();
     }
 }

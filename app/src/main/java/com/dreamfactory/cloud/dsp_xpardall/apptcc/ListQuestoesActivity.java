@@ -3,8 +3,12 @@ package com.dreamfactory.cloud.dsp_xpardall.apptcc;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.animation.Animation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Adapter.QuestaoAdapter;
@@ -18,7 +22,7 @@ public class ListQuestoesActivity extends ActionBarActivity {
 
     private RecyclerView recyclerView;
     private QuestaoDAO questaoDAO;
-    private List<Questao> questaoList;
+    private ArrayList<Questao> questaoList;
     private QuestaoAdapter questaoAdapter;
 
     @Override
@@ -34,5 +38,8 @@ public class ListQuestoesActivity extends ActionBarActivity {
         recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
 
         recyclerView.setAdapter(questaoAdapter);
+        recyclerView.setAnimation(new Animation() {
+        });
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
