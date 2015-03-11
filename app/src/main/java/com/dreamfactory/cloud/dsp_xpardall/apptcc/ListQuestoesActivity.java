@@ -6,10 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.animation.Animation;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import Adapter.QuestaoAdapter;
 import Dao.QuestaoDAO;
@@ -32,14 +30,13 @@ public class ListQuestoesActivity extends ActionBarActivity {
         setContentView(R.layout.list_questao);
 
         questaoDAO = new QuestaoDAO(this);
-        questaoList = questaoDAO.listarQuestoes();
+        questaoList = (ArrayList<Questao>) questaoDAO.listarQuestoes();
         questaoAdapter = new QuestaoAdapter(this,questaoList);
 
         recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
 
         recyclerView.setAdapter(questaoAdapter);
-        recyclerView.setAnimation(new Animation() {
-        });
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
