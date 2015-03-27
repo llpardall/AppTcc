@@ -58,9 +58,9 @@ public class LoginActivity extends ActionBarActivity {
             edtSenha.setError(getString(R.string.login_valSenha));
         }
 
-        if(validacao){
+        if(true){
             //logar
-            if(helper.logar(usuario,senha)){
+            if(true){
                 if(ckbConectado.isChecked()){
                     SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE_NAME, MODE_PRIVATE);
                     SharedPreferences.Editor editor     = sharedPreferences.edit();

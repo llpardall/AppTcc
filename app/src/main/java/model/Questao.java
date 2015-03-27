@@ -9,7 +9,8 @@ import Dao.DatabaseHelper;
  * Created by Usuario on 30/01/2015.
  */
 
-@DatabaseTable(tableName = "Question")
+///@DatabaseTable(tableName = "Question")
+@DatabaseTable(tableName = "question")
 public class Questao {
     @DatabaseField(generatedId = true)
     private int _id;

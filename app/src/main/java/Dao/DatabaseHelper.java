@@ -82,11 +82,12 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         public static final String TABELA = "question";
         public static final String _ID = "_id";
         public static final String QUESTAO = "questao";
-        public static final String RESPOSTAA = "respostaa";
-        public static final String RESPOSTAB = "respostab";
-        public static final String RESPOSTAC = "respostac";
-        public static final String RESPOSTAD = "respostad";
-        public static final String RESPOSTAE = "respostae";
+        //public static final String RESPOSTAA = "respostaa";
+        public static final String RESPOSTAA = "respostaA";
+        public static final String RESPOSTAB = "respostaB";
+        public static final String RESPOSTAC = "respostaC";
+        public static final String RESPOSTAD = "respostaD";
+        public static final String RESPOSTAE = "respostaE";
         public static final String CORRETA = "correta";
         public static final String ASSUNTO = "assunto";
 

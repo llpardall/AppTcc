@@ -24,8 +24,10 @@ public class ListQuestoesActivity extends ActionBarActivity {
     private QuestaoAdapter questaoAdapter;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    //public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+    public void onCreate(Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState, persistentState);
+        super.onCreate(savedInstanceState);
 
         setContentView(R.layout.list_questao);
 
